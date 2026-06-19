@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .logo-container {
+    margin-bottom: 24px !important;
+  }
+
+  .logo-container img {
+    max-width: 320px !important;
+  }
+
+  .page,
+  .container,
+  .chat-container,
+  .register-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 16px !important;
+  }
+
+  .container {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100% !important;
+  }
+
+  .top-icons-box {
+    top: 12px !important;
+    right: 12px !important;
+    padding: 10px 8px !important;
+    gap: 10px !important;
+    flex-direction: column !important;
+  }
+
+  .top-icons-box .icon-btn {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .icon-btn::after {
+    display: none !important;
+  }
+
+  .header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 60px 0 16px !important;
+  }
+
+  .search-box {
+    width: 100% !important;
+    padding: 12px 16px !important;
+  }
+
+  .results-title {
+    margin: 24px 16px 12px !important;
+  }
+
+  .results-list {
+    padding: 0 12px 24px !important;
+  }
+
+  .result-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 16px !important;
+  }
+
+  .result-link {
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .result-chat-btn {
+    align-self: flex-end !important;
+  }
+
+  .chat-form {
+    flex-direction: column !important;
+  }
+
+  .chat-form input,
+  .chat-form button {
+    width: 100% !important;
+  }
+
+  .message {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 8px 24px !important;
+  }
+
+  .logo-container img {
+    max-width: 260px !important;
+  }
+
+  .page,
+  .container,
+  .chat-container,
+  .register-box {
+    padding: 18px 12px !important;
+  }
+
+  .section {
+    padding: 14px 12px !important;
+  }
+
+  .top-icons-box {
+    position: static !important;
+    margin: 0 auto 16px !important;
+    width: fit-content !important;
+    flex-direction: row !important;
+  }
+
+  .profile-pic {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .search-box input,
+  .search-box button,
+  .btn,
+  button,
+  input,
+  .main-btn {
+    font-size: 0.95rem !important;
+  }
+
+  .chat-window {
+    min-height: 280px !important;
+  }
+}
